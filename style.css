@@ -201,7 +201,8 @@ input:focus {
   margin-top: 80px; }
 
 .mt-100 {
-  margin-top: 100px; }
+  margin-top: 100px;
+ margin-bottom: 80px; }
 
 .mt-150 {
   margin-top: 150px; }
@@ -237,10 +238,10 @@ input:focus {
   margin-bottom: 70px; }
 
 .mb-80 {
-  margin-bottom: 80px; }
+  margin-bottom: 30px; }
 
 .mb-100 {
-  margin-bottom: 100px; }
+  margin-bottom: 10px; }
 
 .ml-15 {
   margin-left: 15px; }
@@ -266,7 +267,7 @@ input:focus {
   padding-bottom: 80px; }
 
 .section-padding-80-0 {
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 0; }
 
 .section-padding-100 {
@@ -509,7 +510,7 @@ input:focus {
     display: block;
     margin-bottom: 10px; }
   .section-heading h2 {
-    font-size: 42px;
+    font-size: 30px;
     text-transform: capitalize;
     margin-bottom: 0;
     display: block;
@@ -935,7 +936,7 @@ input:focus {
 .footer-area {
   position: relative;
   z-index: 1;
-  background-color: #0e2737; }
+  background-color: #09527F; }
 
 .single-footer-widget {
   position: relative;
@@ -958,6 +959,16 @@ input:focus {
     margin-bottom: 25px; }
     .single-footer-widget .latest-blog-area:last-child {
       margin-bottom: 0; }
+      p.post-title{
+        margin-top: 2%;
+        text-align: center;
+        color: #2a303b;
+        font-weight: 500;
+      }
+      p.post-parg{
+        text-align: center;
+      }
+
     .single-footer-widget .latest-blog-area .post-title {
       font-size: 16px;
       display: block;
@@ -1015,8 +1026,10 @@ input:focus {
     display: block;
     margin-bottom: 20px; }
   .single-footer-widget p {
+    margin-bottom: 2.5%;
     color: #afb4bf; }
   .single-footer-widget h4 {
+    font-size: 100%;
     color: #1cc3b2; }
   .single-footer-widget span {
     color: #afb4bf;
@@ -1759,7 +1772,8 @@ html .ui-button.ui-state-disabled:active {
     line-height: 1.8;
     color: #636a76;
     margin-bottom: 30px;
-    font-weight: 400; }
+    font-size: 90%;
+    font-weight: 500; }
   .about-us-content p {
     margin-bottom: 30px; }
     .about-us-content p span {
@@ -1772,9 +1786,21 @@ html .ui-button.ui-state-disabled:active {
     border-radius: 6px;
     width: 100%; }
 
-.about-us-thumbnail {
+    .about-us-thumbnail img{
+      background-color: #000000;
+    }
+  .about-us-thumbnail {
+
   position: relative;
   z-index: 1; }
+  .single-thumb-margin{
+    position: relative;
+    z-index: 1;
+    margin-top: 20%;
+    display: block;
+    overflow: hidden;
+    border-radius: 6px;
+  }
   .about-us-thumbnail .single-thumb {
     position: relative;
     z-index: 1;
@@ -1782,14 +1808,14 @@ html .ui-button.ui-state-disabled:active {
     display: block;
     overflow: hidden;
     border-radius: 6px; }
-    .about-us-thumbnail .single-thumb img {
+    .about-us-thumbnail, .single-thumb img, .single-thumb-margin img {
       -webkit-transition-duration: 500ms;
       -o-transition-duration: 500ms;
       transition-duration: 500ms;
       border-radius: 6px; }
     .about-us-thumbnail .single-thumb:first-child {
       margin-bottom: 10px; }
-    .about-us-thumbnail .single-thumb:hover img, .about-us-thumbnail .single-thumb:focus img {
+    .about-us-thumbnail  .about-us-thumbnail {
       -webkit-transform: scale(1.15);
       -ms-transform: scale(1.15);
       transform: scale(1.15); }
